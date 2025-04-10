@@ -23,10 +23,8 @@ Este projeto permite consultar preços de produtos salvos em um banco de dados F
 
 ### 1. Instale o XAMPP 7.3.0
 
-- Acesse a pasta `Arquivos/` e execute como administrador:
-  ```
-  xampp-win32-7.3.0-0-VC15-installer.exe
-  ```
+```  xampp-win32-7.3.0-0-VC15-installer.exe ```
+  
 - Marque apenas **Apache** e **PHP**, ou deixe tudo marcado
 - No fim da instalação, **desmarque** a opção de iniciar o aplicativo automaticamente
 - Conclua a instalação e depois **execute como administrador** o XAMPP
