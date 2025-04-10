@@ -12,16 +12,22 @@ try {
 
     // Consulta com LIKE e FIRST
     $sql = "SELECT FIRST 20 
-            P.IDPRODUTO, 
-            P.DESCRICAO, 
-            P.VAREJOPRECO,
-            F.FOTO
-        FROM TESTPRODUTO P
-        LEFT JOIN TFOTOS F ON F.IDPRODUTO = P.IDPRODUTO
-        WHERE P.DESCRICAO LIKE :desc";
+    P.IDPRODUTO, 
+    P.DESCRICAO, 
+    P.VAREJOPRECO,
+    F.FOTO
+FROM TESTPRODUTO P
+LEFT JOIN TFOTOS F ON F.IDPRODUTO = P.IDPRODUTO
+WHERE P.DESCRICAO LIKE :desc1 
+   OR P.CODBARRAS LIKE :desc2";
 
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([':desc' => "%$pesquisa%"]);
+$stmt = $pdo->prepare($sql);
+$stmt->execute([
+':desc1' => "%$pesquisa%",
+':desc2' => "%$pesquisa%"
+]);
+
+
     $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Erro na conexão: " . $e->getMessage());
@@ -30,14 +36,22 @@ try {
 <head>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ello.ico" type="image/x-icon">
+    <title>Consulta Preços - Ello</title>
+
+
 </head>
 <!-- HTML -->
+ <div class="fixed">
+ <div class="cabecalho">
+    <img src="ello.ico" alt="Logo" class="logo">
+    <h1>Consulta Preço</h1>
+</div>
 <form method="get">
-    <label for="descricao" class="descricao">Descrição:</label>
-    <input type="text" name="descricao" id="descricao" class="descricao" placeholder="Pesquisar produto..." value="<?= htmlspecialchars($pesquisa) ?>">
-    <button type="submit" class="buscar">Buscar</button>
+    <input type="text" name="descricao" id="descricao" class="descricao" placeholder="Pesquisar produto por descrição ou cobarras..." value="<?= htmlspecialchars($pesquisa) ?>">
+    <button type="submit" class="buscar"><img src="icones/search.png" alt="pesquisar" class="pesquisar"></button>
 </form>
-
+</div>
 <table>
     <tr>
         <th>ID</th>

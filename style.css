@@ -4,46 +4,69 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+div.fixed{
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+div.cabecalho{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  flex-direction: row;
+  background-color: #f17602;
+}
+div.cabecalho img.logo{
+  width: 45px;
+  height: 45px;
+  margin: auto 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+div.cabecalho h1{
+  margin-block: auto;
+  color:#fff;
+}
 form{
     display: flex;
     width: 100%;
-    box-shadow: 0 0 10px #333;
-    max-height: 150px;
-    flex-direction: column;
-    padding: 10px;
-}
-label.descricao{
-    width: 90%;
-    margin-inline: 5%;
-    margin-block: 3px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #f175026b;
+    justify-content: center;
 }
 input.descricao{
-    width: 90%;
-    margin-inline: 5%;
+    width: 75%;
     padding: 10px 5px;
     margin-block: 3px;
     border: none;
     border: 1px solid #333;
     outline: none;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px 0px 0px 5px;
+    margin-right: -1px;
 }
 button.buscar{
-    width: 90%;
-    margin-inline: 5%;
+    width: 15%;
     padding: 10px 5px;
     margin-block: 3px;
+    margin-right: 1px;
     border: none;
     border: 1px solid #333;
     outline: none;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #ccc;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #fff;
+}
+button img.pesquisar{
+  height: 15px;
 }
 table{
-    width: 90%;
-    margin-inline: 5%;
-    margin-block: 50px;
+    width: 95%;
+    margin-inline: 2.5%;
+    margin-block: 15px;
+    margin-top:110px;
     border-collapse: collapse;
+    font-size: 12px;
 }
   td, th {
     border: 1px solid #f2f2f2;
