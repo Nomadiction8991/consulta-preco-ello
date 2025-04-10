@@ -16,9 +16,8 @@ Este projeto permite consultar preços de produtos salvos em um banco de dados F
 
 ## 📁 Estrutura de Pastas
 
-- `Arquivos/` → contém o instalador do XAMPP  
-- `htdocs/` → onde você colocará o `index.php` e `style.css`  
-- `imagens/` → imagens de ajuda visual usadas neste guia
+- `c:/xampp/htdocs/` → onde você colocará o `index.php` e `style.css`  
+- `consulta-preco-ello/imagens/` → imagens de ajuda visual usadas neste guia
 
 ## 🤩 Passo a Passo da Instalação
 
