@@ -1,0 +1,27 @@
+/*
+ * Copyright (c) 2025 Weverton Pereira Andrade / Ello Tecnologias
+ * 
+ * Este software é fornecido exclusivamente para uso interno e não comercial por
+ * Weverton Pereira Andrade e/ou Ello Tecnologias.
+ * 
+ * É estritamente proibido:
+ * - Vender, redistribuir ou sublicenciar este software.
+ * - Utilizar o software, total ou parcialmente, para fins comerciais sem autorização expressa por escrito do autor.
+ * - Alterar os arquivos com a intenção de remover qualquer menção ao autor original.
+ * 
+ * Este software é fornecido "no estado em que se encontra", sem garantias de qualquer tipo,
+ * expressas ou implícitas.
+ * 
+ * O uso deste código por terceiros não autorizados constitui violação dos direitos autorais,
+ * podendo gerar responsabilização civil e criminal.
+ * 
+ * Para fins de auditoria, este sistema pode conter verificações de integridade e uso não autorizado.
+ * 
+ * Estes termos podem ser atualizados, modificados ou substituídos a qualquer momento
+ * pelo autor, sem aviso prévio.
+ * 
+ * Contato do autor para permissões:
+ * Weverton Pereira Andrade – wevertonpereiraandrade2005@gmail.com
+ * 
+ * Última atualização: Abril de 2025
+ */
