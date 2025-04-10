@@ -45,6 +45,7 @@ input.descricao{
     outline: none;
     border-radius: 5px 0px 0px 5px;
     margin-right: -1px;
+    text-transform: uppercase;
 }
 button.buscar{
     width: 15%;
